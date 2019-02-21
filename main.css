@@ -66,10 +66,11 @@ nav ul li a:hover {
     padding-top: 35vh;
     margin-bottom: 10px;
     text-align: center;
-    border: black, solid, 1px;
+    /*
     background: no-repeat center/100% url('assets/timp.JPG');
     background: flip;
     color: white;
+    */
 }
 
 .intro h1 {
@@ -179,13 +180,11 @@ footer {
     padding: 0px;
 }
 
-.img {
-    max-width: 400px;
-    max-width: 300px;
-    caption-side: inherit;
-    padding-top: 20px;
-
+img {
+    max-height: 200px;
+    max-width: 200px;
 }
+
 
 figcaption {
     font: italic smaller sans-serif;
