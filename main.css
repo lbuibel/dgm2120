@@ -264,12 +264,14 @@ figcaption {
     font-size: 15px;
   }
   .button:hover {
-    box-shadow: 5px 5px #99bdff;
     transition: .3s;
     cursor: pointer;
+    background-image: linear-gradient(to top, #0048ff , #3c73ff);
+    transition: 1s;
+
   }
 
-  .contactHeading {
+  .pageHeading {
     top: 0;
     padding-top: 95px;
     margin-left:2vw;
