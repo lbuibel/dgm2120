@@ -246,6 +246,7 @@ figcaption {
     height: 3rem;
     border-radius: 1rem;
     padding: .75rem;
+    color: navy;
     background-color: white;
 }
 
