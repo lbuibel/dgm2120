@@ -7,13 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body>
+<main>
     <nav id="navbar">
         <ul>
+            <li><a href="picture.html">Picture Gallery</a></li>
             <li><a href="index.html">Home</a></li>
-                <li><a href="picture.html">Picture Gallery</a></li>
-                <li><a href="trail.html">Trails</a></li>
-                <li><a href="maintenance.html">Maintenance</a></li>
+            <li><a href="trail.html">Trails</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
+            <li><a href="contact.html">Contact</a></li> <!-- 1/2 within page links-->
+
         </ul>
     </nav>
 
@@ -22,13 +24,26 @@
     </div>
 
     <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="myForm" class = "testForm">
-        <input name="redirect" type="hidden" value="thanks.html">
+
         <fieldset>
             <legend>Personal Info</legend>
-            <label><span>First Name</span><input name="First" value="" type="text" placeholder="First Name" class="userInput"></label>
-            <label><span>Last Name</span> <input name="First" value="" type="text" placeholder="Last Name" class="userInput"></label>
-            <label><span>Age</span> <input type="number" name="Age" value="" placeholder="Age" class="userInput"></label>
-            <label><span>Email</span> <input type="email" name="email" value="" placeholder="user@example.com" class="userInput"></label><br>
+            <label><span>First Name</span><input name="First" value="" type="text" placeholder="First Name" class="userInput" required pattern="[a-zA-Z0-9]+"></label>
+            <label><span>Last Name</span> <input name="First" value="" type="text" placeholder="Last Name" class="userInput" required pattern="[a-zA-Z0-9]+"></label>
+            <label><span>Age</span> <input type="number" name="Age" value="" placeholder="Age" class="userInput"></label><br><br>
+  
+            Select County:
+            <select name="county">
+                <option>Utah</option>
+                <option>Wasatch</option>
+                <option>Salt Lake</option>
+                <option>Davis</option>
+            </select><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label><span>Email</span> <input type="email" name="email" value="" placeholder="user@example.com" class="userInput" required></label><br>
             <label><span>Phone</span> <input type="tel" name="telephone" value="" placeholder="555-555-5555" class="userInput"></label><br>
         </fieldset>
 
@@ -41,39 +56,28 @@
             <label><input type="checkbox" name="bike" value="dh"> All Mountain</labeL><br>
             <label><input type="checkbox" name="bike" value="city"> City & Commuter</labeL><br>
                 <br>
-            What bear is best?<br>
-            <label><input type="radio" name="bear" value="blackbear"> Black Bear</label><br>
-            <label><input type="radio" name="bear" value="brownbear"> Brown Bear</label><br>
-            <label><input type="radio" name="bear" value="brownbear"> Polar Bear</label><br>
-            <label><input type="radio" name="bear" value="brownbear"> Panda Bear</label><br>
+            What is you main cycling goal?<br>
+            <label><input type="radio" name="goal" value="blackbear"> Better Fitness</label><br>
+            <label><input type="radio" name="goal" value="brownbear"> Better Nutrition</label><br>
+            <label><input type="radio" name="goal" value="brownbear"> More mechanical know-how</label><br>
+            <label><input type="radio" name="goal" value="brownbear"> Learning new trail networks</label><br>
 
                 <br>
-
-            Select County:
-            <select name="county">
-                <option>Utah</option>
-                <option>Wasatch</option>
-                <option>Salt Lake</option>
-                <option>Davis</option>
-            </select><br><br>
 
             Comment Below<br>
             <textarea name="comments" class="textEntry"></textarea>
 
-            
-            <input type="submit" name="submit" value="Submit" class="button">
-
         </fieldset>
 
-        <input type="hidden" name="website" value="contact.html"> <!--where the form comes-->
-
- 
-
-
-
+        <input type="submit" value="Submit" class="button">
+        <input type="hidden" value="info from contage page" name="subject">
+        <input name="redirect" type="hidden" value="thanks.html">
 
     </form>
 
 
 
-</body>
+</main>
+<footer> This page is copyrighted &copy; &bull; by Logan Uibel on Jan. 22, 2019
+    </footer>
+</html>
