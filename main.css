@@ -163,6 +163,8 @@ footer {
     padding-bottom: 5px;
     font-weight: lighter;
     margin-top: 40vh;
+    position: absolute;
+    bottom: 100%;
 }
 
 #pagebottom {
