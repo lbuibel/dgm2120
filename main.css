@@ -11,17 +11,23 @@ active state: all links will have yellow background when active
 */
 
 
-
-
 html,
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: #85c0b4;;
+    background-image: url(05Images/background.gif);
+    background-repeat: repeat-x;
 }
 * {
     margin: 0;
     padding: 0;
   }
+#container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #heading{
     display: flex;
@@ -34,18 +40,20 @@ a:active {
 }
 
 /*-------- Styling for navigation bar---------- */
+
 nav ul {
-    text-align: left;
-    position: fixed;
-    width: 100%;
+    text-align: center;
+    position: relative;
     background-color: rgb(0,0,0);
   }
 
 nav ul li {
     display: inline-block;
-    margin: 40px;
+    margin: 30px;
     margin-bottom: 15px;
     margin-top: 20px;
+    max-width: 900px;
+    align-items: center;
 }
   
   nav ul li a {
@@ -62,15 +70,13 @@ nav ul li a:hover {
 /*-------- Main landing section ---------- */
 .intro{
     top: 0;
-    min-height: 50vh;
-    padding-top: 35vh;
+    min-height: 30vh;
+    padding-top: 25vh;
     margin-bottom: 10px;
     text-align: center;
-    /*
-    background: no-repeat center/100% url('assets/timp.JPG');
+    background: no-repeat center/100% url('05Images/timpanogos.JPG');
     background: flip;
     color: white;
-    */
 }
 
 .intro h1 {
@@ -78,11 +84,12 @@ nav ul li a:hover {
 }
 
 /*-------- container which holds tiles/info ---------- */
-.container{
+.cardHolder{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     padding-bottom: 75px;
+    max-width: 100%;
 }
 
 /*-------- Outer box/tile for each section of info---------- */
@@ -114,29 +121,38 @@ nav ul li a:hover {
     padding-top: 15px;
 }
 
+.tileInfo li {
+    background-image: url('05Images/wheel_icon.png');
+    background-repeat: no-repeat;
+    list-style: none;
+    background-position: left center;
+	padding: 16px 0 16px 30px;
+	background-size: 20px;
+}
+
 /*-------- Each tile gets it own background color etc ---------- */
 #about {
-    background-color: #64BA4E;
+    background-color: #78C8D7;
     color: white;
 }
 
 #questions {
-    background-color: #FAB73B;
+    background-color: #FFC758;
     color:white;
 }
 
 #maintenance {
-    background-color: #F48230;
+    background-color: #E79B71;
     color:white;
 }
 
 #trails {
-    background-color: #DE3C43;
+    background-color: rgb(218, 103, 109);
     color:white;
 }
 
 #types {
-    background-color: #199EDA;
+    background-color: #08AC88;
     color:white;
 }
 
