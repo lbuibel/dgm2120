@@ -14,8 +14,9 @@ active state: all links will have yellow background when active
 html,
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #85c0b4;;
-    background-image: url(05Images/background.gif);
+    /*background-color: #85c0b4;;*/
+    background-color: white;
+    background-image: url(05Images/background_white.gif);
     background-repeat: repeat-x;
 }
 * {
@@ -23,16 +24,13 @@ body {
     padding: 0;
   }
 
-head {
-    background-image: url(05Images/bike_icon.png);
-    padding: 10px 10px 10px 10px;
-}
+
 
 #container {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 5px 5px 15px rgb(94, 94, 94);
+    box-shadow: 5px 5px 15px lightgray;
 }
 
 
@@ -47,6 +45,19 @@ a:active {
 }
 
 /*-------- Styling for navigation bar---------- */
+
+header {
+    background-image: url(05Images/tree_logo.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    min-height: 10vh;
+    background-color: #f3f3f3;
+    padding-left: 5px;
+    background-position: 2%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 
 nav ul {
     text-align: center;
@@ -84,7 +95,7 @@ nav ul li a:hover {
     background: no-repeat center/100% url('05Images/timpanogos.JPG');
     background: flip;
     color: white;
-    box-shadow: 5px 5px 15px rgb(94, 94, 94);
+    box-shadow: 5px 5px 15px lightgray;
 
 }
 
@@ -217,8 +228,8 @@ footer {
 }
 
 img {
-    max-height: 30vh;
-    max-width: 30vw;
+    max-height: 25vh;
+    max-width: 25vw;
 }
 
 
