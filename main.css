@@ -22,10 +22,17 @@ body {
     margin: 0;
     padding: 0;
   }
+
+head {
+    background-image: url(05Images/bike_icon.png);
+    padding: 10px 10px 10px 10px;
+}
+
 #container {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 5px 15px rgb(94, 94, 94);
 }
 
 
@@ -77,10 +84,13 @@ nav ul li a:hover {
     background: no-repeat center/100% url('05Images/timpanogos.JPG');
     background: flip;
     color: white;
+    box-shadow: 5px 5px 15px rgb(94, 94, 94);
+
 }
 
 .intro h1 {
     font-size: 50px;
+    text-shadow: 2px 2px 0px #000;
 }
 
 /*-------- container which holds tiles/info ---------- */
@@ -121,13 +131,22 @@ nav ul li a:hover {
     padding-top: 15px;
 }
 
-.tileInfo li {
+.tile ul li {
     background-image: url('05Images/wheel_icon.png');
     background-repeat: no-repeat;
     list-style: none;
     background-position: left center;
-	padding: 16px 0 16px 30px;
+	padding: 10px 0 10px 30px;
 	background-size: 20px;
+}
+
+.tile ol li {
+    background-image: url('05Images/bike_icon.png');
+    background-repeat: no-repeat;
+    list-style: none;
+    background-position: left center;
+	padding: 10px 0 10px 30px;
+	background-size: 20px; 
 }
 
 /*-------- Each tile gets it own background color etc ---------- */
