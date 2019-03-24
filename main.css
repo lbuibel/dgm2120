@@ -1,15 +1,3 @@
-/*
-classes - Main classes used: container, tile, tileInfo, intro
-borders: intro has a border, each tile has a specified border radius
-navigation: see navbar
-multiple selectors: see nav elements (hover etc)
-styling lists: see tileInfo, list-style-position was used to force list inside the tile box
-psudo classes - nav elements are underlined when hovered over
-fonts: imported roboto font, changed properties in intro class, definitions, and footer
-background color: each tile has own background color, fonts colors are changed in tiles and footer
-active state: all links will have yellow background when active
-*/
-
 
 html,
 body {
@@ -28,6 +16,7 @@ body {
 
 #container {
     max-width: 900px;
+    min-width: 300px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 5px 15px lightgray;
@@ -100,34 +89,34 @@ header {
 
 /*-------- Styling for Desktop navigation bar---------- */
 @media only screen and (min-width:601px) {
-    nav ul {
-        text-align: center;
+    nav {
         background-color: #6AAD9F;
-      }
-    
-    nav ul li {
-        display: inline-block;
-        margin: 30px;
-        margin-bottom: 15px;
-        margin-top: 20px;
-        max-width: 900px;
-        align-items: center;
+        width: 100%;
+        height: 35px;
+        min-width: 800px;
     }
-      
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
     nav ul li a {
+        display: block;
+        padding: .5rem 1.5rem;
         color: white;
         text-decoration: none;
     }
-      
+
     nav ul li a:hover {
         background-color: #FFC759;
+        color: white;
     }
-
-    .intro h1 {
-        font-size: 50px;
-        text-shadow: 2px 2px 0px #000;
-    }
-
 }
 
 /*-------- Styling for navigation bar Ends---------- */
