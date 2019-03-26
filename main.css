@@ -30,7 +30,7 @@ body {
 }
 
 a:active {
-    background-color: #6AAD9F;
+    background-color: #FFC759;
 }
 
 header {
@@ -130,7 +130,6 @@ header {
     margin-bottom: 10px;
     text-align: center;
     background: no-repeat center/100% url('05Images/timpanogos.JPG');
-    background: flip;
     color: white;
     box-shadow: 5px 5px 15px lightgray;
 
@@ -307,6 +306,7 @@ figcaption {
     width: 70vw;
     margin-left: 2vw;
     margin-bottom: 1vh;
+    max-width: 90%;
 }
 
 .testForm legend {
@@ -318,7 +318,7 @@ figcaption {
     color: navy;
     padding: .25rem;
     font-size: .85rem;
-    width: 20rem;
+    width: 30vw;
 }
 
 .textEntry {
@@ -330,6 +330,9 @@ figcaption {
     background-color: white;
 }
 
+textarea {
+    max-width: 80vw;
+}
 .button {
     display: block;
     width: 100px;
