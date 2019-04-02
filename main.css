@@ -240,7 +240,6 @@ footer {
     padding-bottom: 5px;
     font-weight: lighter;
     margin-top: 40vh;
-    position: absolute;
     bottom: 100%;
 }
 
@@ -322,17 +321,15 @@ figcaption {
 }
 
 .textEntry {
-    width: 30rem;
-    height: 3rem;
     border-radius: 1rem;
     padding: .75rem;
     color: navy;
     background-color: white;
+    max-width: 65vw;
+    min-height: 15px;
+    min-width: 30vw;
 }
 
-textarea {
-    max-width: 80vw;
-}
 .button {
     display: block;
     width: 100px;
@@ -360,3 +357,47 @@ textarea {
     padding-top: 95px;
     margin-left:2vw;
   }
+
+  /*------------ iframe -----------*/
+
+  .map_iframe {
+      width: 80%;
+      height: 30rem;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+
+
+  /*----------- table --------------*/
+
+  table.rank {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  table.rank tr {
+      height: 40px;
+      font-size: 14pt;
+  }
+
+  table.rank th {
+      background-color: gray;
+      padding: .5rem;
+      color: white;
+      text-align: left;
+      height: 30px;
+      font-size: 12pt;
+  }
+
+  table.rank td {
+      padding: .5rem;
+  }
+
+  table.rank tr:nth-child(even) {
+      background-color: #6AAD9F;
+  }
+  table.rank tr:hover {
+    background-color: #FFC758;
+    color: white;
+}
